@@ -1,0 +1,13 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; }
+nav { background: #2c3e50; padding: 12px 20px; display: flex; gap: 8px; flex-wrap: wrap; }
+nav a { color: #fff; text-decoration: none; padding: 8px 14px; border-radius: 6px; }
+nav a:hover, nav a.active { background: #3498db; }
+main { max-width: 900px; margin: 20px auto; padding: 0 15px; }
+section { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
+button { background: #3498db; color: #fff; border: 0; padding: 8px 14px; margin: 4px 4px 4px 0; border-radius: 5px; cursor: pointer; }
+input { padding: 8px; margin: 4px 0; width: 100%; max-width: 300px; display: block; }
+img { max-width: 100%; display: block; margin: 10px 0; }
+#panel { background: #ecf0f1; padding: 15px; border-radius: 6px; margin-top: 10px; }
+.stage { position: relative; height: 260px; background: #ecf0f1; border-radius: 6px; overflow: hidden; margin-top: 10px; }
+.box { position: absolute; top: 10px; left: 10px; width: 60px; height: 60px; background: #e67e22; border-radius: 6px; }

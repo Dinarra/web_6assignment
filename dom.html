@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Part 3. DOM Manipulation</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Part 1: Basics</a>
+    <a href="effects.html">Part 2: Effects</a>
+    <a href="dom.html" class="active">Part 3: DOM</a>
+    <a href="animations.html">Part 4: Animations</a>
+  </nav>
+
+  <main>
+    <h1>Part 3. DOM Manipulation with jQuery</h1>
+
+    <section>
+      <h2>Task 5. Add &amp; Remove Elements</h2>
+      <ul id="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ul>
+      <button id="append">Add Item (append)</button>
+      <button id="prepend">Add Item (prepend)</button>
+      <button id="remove">Remove Item</button>
+    </section>
+
+    <section>
+      <h2>Task 6. Modifying Attributes</h2>
+      <img id="attrImg" src="img/img1.svg" alt="Changing image" width="300">
+      <button id="changeSrc">Change image src</button>
+      <p><a id="myLink" href="https://jquery.com" target="_blank">Link: jquery.com</a></p>
+      <button id="changeHref">Change link href</button>
+    </section>
+
+    <section>
+      <h2>Task 7. Form Interaction</h2>
+      <form id="form" onsubmit="return false">
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Your name">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Your email">
+      </form>
+      <p>Name: <b id="outName"></b></p>
+      <p>Email: <b id="outEmail"></b></p>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/dom.js"></script>
+</body>
+</html>
