@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Part 5 | jQuery Lab</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="index.html">jQuery Lab</a>
+    <nav class="nav-links">
+      <a href="index.html">Part 1: Basics</a>
+      <a href="effects.html">Part 2: Effects</a>
+      <a href="dom.html">Part 3: DOM</a>
+      <a href="animations.html">Part 4: Animations</a>
+      <a href="project.html" class="active">Part 5: Mini Project</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <span class="tag">Task 11</span>
+    <h1>Mini Project: <span>Accordion Menu</span></h1>
+    <p>An interactive jQuery FAQ. Sections expand and collapse with slide animations.</p>
+  </div>
+
+  <main class="container">
+    <section class="card">
+      <div class="card-head"><span class="badge">Accordion</span><h2>jQuery FAQ</h2></div>
+      <p class="desc">Click a section title to open it. Opening a section closes the others.</p>
+
+      <div class="accordion">
+        <div class="acc-item">
+          <div class="acc-head"><span>📘 What is jQuery?</span><span class="acc-arrow">▼</span></div>
+          <div class="acc-body">jQuery is a fast and small JavaScript library. It simplifies DOM manipulation, event handling, effects and animations with short, readable code.</div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-head"><span>🎯 How do selectors work?</span><span class="acc-arrow">▼</span></div>
+          <div class="acc-body">Selectors find elements like in CSS: <code>$("#id")</code> by ID, <code>$(".class")</code> by class and <code>$("p")</code> by tag name.</div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-head"><span>✨ What effects exist?</span><span class="acc-arrow">▼</span></div>
+          <div class="acc-body">Show/hide (<code>.show()</code>, <code>.hide()</code>, <code>.toggle()</code>), fade (<code>.fadeIn()</code>, <code>.fadeOut()</code>) and slide (<code>.slideUp()</code>, <code>.slideDown()</code>, <code>.slideToggle()</code>).</div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-head"><span>🚀 How to create animations?</span><span class="acc-arrow">▼</span></div>
+          <div class="acc-body">Use <code>.animate()</code> with numeric CSS properties, like width, height, left, top and opacity. Several <code>.animate()</code> calls in a row are queued and play one after another.</div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-head"><span>🧩 How to change the DOM?</span><span class="acc-arrow">▼</span></div>
+          <div class="acc-body">Add elements with <code>.append()</code> and <code>.prepend()</code>, delete them with <code>.remove()</code>, and change attributes with <code>.attr()</code>.</div>
+        </div>
+      </div>
+
+      <div class="btns">
+        <button class="btn" id="openAll">Expand all</button>
+        <button class="btn warn" id="closeAll">Collapse all</button>
+      </div>
+      <p class="counter" id="counter"></p>
+    </section>
+  </main>
+
+  <footer>Assignment #6 · jQuery · Your Full Name · Your Group</footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/project.js"></script>
+</body>
+</html>

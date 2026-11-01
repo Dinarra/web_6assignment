@@ -3,51 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Part 3. DOM Manipulation</title>
+  <title>Part 3 | jQuery Lab</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Part 1: Basics</a>
-    <a href="effects.html">Part 2: Effects</a>
-    <a href="dom.html" class="active">Part 3: DOM</a>
-    <a href="animations.html">Part 4: Animations</a>
-  </nav>
+  <header class="navbar">
+    <a class="brand" href="index.html">jQuery Lab</a>
+    <nav class="nav-links">
+      <a href="index.html">Part 1: Basics</a>
+      <a href="effects.html">Part 2: Effects</a>
+      <a href="dom.html" class="active">Part 3: DOM</a>
+      <a href="animations.html">Part 4: Animations</a>
+      <a href="project.html">Part 5: Mini Project</a>
+    </nav>
+  </header>
 
-  <main>
-    <h1>Part 3. DOM Manipulation with jQuery</h1>
+  <div class="hero">
+    <span class="tag">Part 3</span>
+    <h1>DOM <span>Manipulation</span></h1>
+    <p>Add and remove elements, change attributes and react to form input in real time.</p>
+  </div>
 
-    <section>
-      <h2>Task 5. Add &amp; Remove Elements</h2>
-      <ul id="list">
-        <li>Item 1</li>
-        <li>Item 2</li>
-      </ul>
-      <button id="append">Add Item (append)</button>
-      <button id="prepend">Add Item (prepend)</button>
-      <button id="remove">Remove Item</button>
+  <main class="container">
+    <section class="card">
+      <div class="card-head"><span class="badge">Task 5</span><h2>Add &amp; Remove Elements</h2></div>
+      <p class="desc">Methods: <code>.append()</code> (add to the end), <code>.prepend()</code> (add to the start), <code>.remove()</code>.</p>
+      <div class="demo">
+        <ul class="list" id="list">
+          <li>Item 1</li>
+          <li>Item 2</li>
+        </ul>
+      </div>
+      <div class="btns">
+        <button class="btn" id="addItem">Add Item</button>
+        <button class="btn alt" id="addTop">Add to Top</button>
+        <button class="btn warn" id="removeItem">Remove Item</button>
+      </div>
     </section>
 
-    <section>
-      <h2>Task 6. Modifying Attributes</h2>
-      <img id="attrImg" src="img/img1.svg" alt="Changing image" width="300">
-      <button id="changeSrc">Change image src</button>
-      <p><a id="myLink" href="https://jquery.com" target="_blank">Link: jquery.com</a></p>
-      <button id="changeHref">Change link href</button>
+    <section class="card">
+      <div class="card-head"><span class="badge">Task 6</span><h2>Modifying Attributes</h2></div>
+      <p class="desc">Use <code>.attr()</code> to change an image <code>src</code> and a link <code>href</code>.</p>
+      <div class="demo">
+        <img id="attrImg" class="pic" src="img/img1.svg" alt="Image 1">
+        <p style="margin-top:10px">Current src: <code id="srcShow">img/img1.svg</code></p>
+        <p style="margin-top:14px"><a id="myLink" href="https://jquery.com" target="_blank" style="color:#00d4ff">Visit this link</a></p>
+        <p>Current href: <code id="hrefShow">https://jquery.com</code></p>
+      </div>
+      <div class="btns">
+        <button class="btn" id="changeSrc">Change image src</button>
+        <button class="btn alt" id="changeHref">Change link href</button>
+      </div>
     </section>
 
-    <section>
-      <h2>Task 7. Form Interaction</h2>
+    <section class="card">
+      <div class="card-head"><span class="badge">Task 7</span><h2>Form Interaction</h2></div>
+      <p class="desc">Start typing. The input is displayed live using <code>.val()</code> and <code>.text()</code>.</p>
       <form id="form" onsubmit="return false">
-        <label>Name</label>
-        <input type="text" id="name" placeholder="Your name">
-        <label>Email</label>
-        <input type="email" id="email" placeholder="Your email">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
       </form>
-      <p>Name: <b id="outName"></b></p>
-      <p>Email: <b id="outEmail"></b></p>
+      <div class="out">
+        <p>Name: <b id="outName">—</b></p>
+        <p>Email: <b id="outEmail">—</b></p>
+      </div>
     </section>
   </main>
+
+  <footer>Assignment #6 · jQuery · Your Full Name · Your Group</footer>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/dom.js"></script>

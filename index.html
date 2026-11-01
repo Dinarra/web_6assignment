@@ -3,36 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Part 1. jQuery Basics</title>
+  <title>Part 1 | jQuery Lab</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html" class="active">Part 1: Basics</a>
-    <a href="effects.html">Part 2: Effects</a>
-    <a href="dom.html">Part 3: DOM</a>
-    <a href="animations.html">Part 4: Animations</a>
-  </nav>
+  <header class="navbar">
+    <a class="brand" href="index.html">jQuery Lab</a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Part 1: Basics</a>
+      <a href="effects.html">Part 2: Effects</a>
+      <a href="dom.html">Part 3: DOM</a>
+      <a href="animations.html">Part 4: Animations</a>
+      <a href="project.html">Part 5: Mini Project</a>
+    </nav>
+  </header>
 
-  <main>
-    <h1>Part 1. Getting Started with jQuery</h1>
+  <div class="hero">
+    <span class="tag">Assignment #6</span>
+    <h1>Getting Started with <span>jQuery</span></h1>
+    <p>Setup, selectors by ID, class and tag, and changing content and styles dynamically.</p>
+  </div>
 
-    <section>
-      <h2>Task 0. Setup</h2>
-      <p>Open the console (F12) to see "jQuery is ready!"</p>
+  <main class="container">
+    <section class="card">
+      <div class="card-head"><span class="badge">Task 0</span><h2>Setup</h2></div>
+      <p class="desc">jQuery is included from a CDN. The <code>$(document).ready()</code> function prints "jQuery is ready!" in the console (press F12).</p>
+      <div class="demo">
+        <p id="status" class="status">Waiting for jQuery...</p>
+      </div>
     </section>
 
-    <section>
-      <h2>Task 1. Selectors &amp; CSS</h2>
-      <h3>Heading (tag selector)</h3>
-      <p id="myId">Paragraph with ID.</p>
-      <p class="myClass">Paragraph with class.</p>
-      <p class="myClass">Another paragraph with class.</p>
-      <button id="btnText">.text() (ID)</button>
-      <button id="btnHtml">.html() (class)</button>
-      <button id="btnCss">.css() (tag)</button>
+    <section class="card">
+      <div class="card-head"><span class="badge">Task 1</span><h2>Selectors &amp; CSS</h2></div>
+      <p class="desc">Select elements by ID, class and tag. Change content with <code>.text()</code> and <code>.html()</code>, change styles with <code>.css()</code>.</p>
+      <div class="demo">
+        <h3>This is an h3 heading (tag selector)</h3>
+        <p id="myId">This paragraph has the ID "myId".</p>
+        <p class="myClass">This paragraph has the class "myClass".</p>
+        <p class="myClass">This is another paragraph with the class "myClass".</p>
+      </div>
+      <div class="btns">
+        <button class="btn" id="btnText">.text() by ID</button>
+        <button class="btn alt" id="btnHtml">.html() by class</button>
+        <button class="btn warn" id="btnCss">.css() by tag</button>
+        <button class="btn ghost" id="btnReset">Reset</button>
+      </div>
     </section>
   </main>
+
+  <footer>Assignment #6 · jQuery · Your Full Name · Your Group</footer>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/part1.js"></script>
